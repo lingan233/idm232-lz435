@@ -1,0 +1,26 @@
+body {
+    background-color: #141414;
+    color: white;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2, h3, h4 {
+    color: #F9F9C5;
+}
+
+h4 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: #F9F9C5;
+    border: transparent;
+    border-radius: 3px;
+}
