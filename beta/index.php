@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Genshin Team Recipe';
 include_once __DIR__ . '/header.php';
+
 ?>
 
         <div class="search-area">
