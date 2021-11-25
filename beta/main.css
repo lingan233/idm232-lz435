@@ -8,12 +8,15 @@ h1, h2, h3, h5, p {
     margin: 1rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, label, input, a, select {
     font-family: 'Open Sans', sans-serif;
 }
 
-h2, h3 {
+h2 {
     color: #F9F9C5;
+}
+
+h2, h3 {
     line-height: 1.75rem;
 }
 
@@ -25,7 +28,7 @@ h4 {
     font-family: 'ZCOOL KuaiLe', cursive;
 }
 
-p {
+p, .btn {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -64,12 +67,17 @@ input {
     border-radius: 3px;
     padding: 2.5rem 1rem;
     margin: 2rem 1rem;
+    display: block;
 }
 
 .flex-container {
     display: flex;
     justify-content: center;
 }
+
+/* .colored-container {
+    background-color: #313560;
+} */
 
 /* ----------NAVIGATION BAR-------------- */
 
@@ -153,6 +161,8 @@ input {
     padding: 2rem;
 }
 
+/* -----------TEAM PAGE------------- */
+
 .team-container {
     max-width: 30rem;
 }
@@ -164,8 +174,9 @@ input {
     cursor: pointer;
 }
 
-.character-overview {
+.character {
     display: flex;
+    width: min-content;
 }
 
 .team-items {
@@ -189,13 +200,13 @@ input {
     margin: .25rem 0;
 }
 
-.btn-group {
+/* .btn-group {
     display: flex;
-}
+} */
 
 /* ----------LOGIN PAGE-------------- */
-
-/* .flex-container {
+/* 
+.colored-container {
     background-color: hotpink;
 } */
 
@@ -232,3 +243,30 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
+
+
+/* ----------RESPONSIVE-------------- */
+
+@media only screen and (min-width: 50rem) {
+    .container {
+        width: 70%;
+        margin: 2rem auto;
+        padding: 4rem;
+    }
+
+    select {
+        width: 50%;
+    }
+
+    .add-team label {
+        padding-left: 4rem;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    .container {
+        width: 55%;
+        padding: 7rem;
+    }
+}
+

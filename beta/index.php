@@ -17,33 +17,10 @@ include_once __DIR__ . '/header.php';
         <div class="img-clip-wrap">
         </div>
 
-        <div>
-            <div class="team-container">
-                <a href="team.php" class="team-overview">
-                    <div class="team-items">
-                        <img src="img/anemo.png" alt="anemo sign">
-                        <img src="img/sucrose.png" alt="character - sucrose">
-                        <h5>Sucrose</h5>
-                    </div>
-                    <div class="team-items">
-                        <img src="img/anemo.png" alt="anemo sign">
-                        <img src="img/sucrose.png" alt="character - sucrose">
-                        <h5>Sucrose</h5>
-                    </div>
-                    <div class="team-items">
-                        <img src="img/anemo.png" alt="anemo sign">
-                        <img src="img/sucrose.png" alt="character - sucrose">
-                        <h5>Sucrose</h5>
-                    </div>
-                    <div class="team-items">
-                        <img src="img/anemo.png" alt="anemo sign">
-                        <img src="img/sucrose.png" alt="character - sucrose">
-                        <h5>Sucrose</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-
+        <?php include __DIR__ . '/team-overview.php'; ?>
+        <?php include __DIR__ . '/team-overview.php'; ?>
+        <?php include __DIR__ . '/team-overview.php'; ?>
+        <?php include __DIR__ . '/team-overview.php'; ?>
 
         <a href="add-team.php" class="flex-container">
             <button class="btn">

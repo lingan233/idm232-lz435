@@ -10,30 +10,22 @@ include_once __DIR__ . '/header.php';
             <h2>Team Members</h2>
             <label for="char">1.</label>
             <select name="char" id="char">
-                <option value="empty"></option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
+                <?php include __DIR__ . '/character-name-select.php'; ?>
             </select>
             <br>
             <label for="char">2.</label>
             <select name="char" id="char">
-                <option value="empty"></option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
+                <?php include __DIR__ . '/character-name-select.php'; ?>
             </select>
             <br>
             <label for="char">3.</label>
             <select name="char" id="char">
-                <option value="empty"></option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
+                <?php include __DIR__ . '/character-name-select.php'; ?>
             </select>
             <br>
             <label for="char">4.</label>
             <select name="char" id="char">
-                <option value="empty"></option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
+                <?php include __DIR__ . '/character-name-select.php'; ?>
             </select>
             <br>
 
