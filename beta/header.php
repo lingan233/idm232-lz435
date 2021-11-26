@@ -3,8 +3,8 @@
 session_start();
 
 // Required files for the app
-// require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
-// require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/database.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/helper.php';
 // require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/functions.php';
 
@@ -14,6 +14,7 @@ if (isset($page_title)) {
 } else {
     $page_title = 'Genshin Team Recipe';
 }
+
 ?>
 
 <!DOCTYPE html>

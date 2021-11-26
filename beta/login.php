@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
 
 <div class="container">
     <div class="flex-container">
-        <form action="" method="post">
+        <form action="index.php" method="post">
             <div class="form-item">
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
