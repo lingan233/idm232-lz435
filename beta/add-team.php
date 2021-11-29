@@ -1,50 +1,57 @@
 <?php
 $page_title = 'Add Team';
 include_once __DIR__ . '/header.php';
-?>
 
-<div class="container">
+?>
+<form action="placeholder">
     <div class="add-team">
-        <form action="placeholder">
+        <div class="container">
             <h1>Add/Update a Team</h1>
             <h2>Team Members</h2>
             <label for="char">1.</label>
-            <select name="char" id="char">
-                <?php include __DIR__ . '/character-name-select.php'; ?>
-            </select>
+            <?php $selectTable = 'genshin_characters'; ?>
+            <?php include __DIR__ . '/dropdown-select.php'; ?>
             <br>
             <label for="char">2.</label>
-            <select name="char" id="char">
-                <?php include __DIR__ . '/character-name-select.php'; ?>
-            </select>
+            <?php include __DIR__ . '/dropdown-select.php'; ?>
             <br>
             <label for="char">3.</label>
-            <select name="char" id="char">
-                <?php include __DIR__ . '/character-name-select.php'; ?>
-            </select>
+            <?php include __DIR__ . '/dropdown-select.php'; ?>
             <br>
             <label for="char">4.</label>
-            <select name="char" id="char">
-                <?php include __DIR__ . '/character-name-select.php'; ?>
-            </select>
+            <?php include __DIR__ . '/dropdown-select.php'; ?>
             <br>
-
             <h2>Overview</h2>
             <textarea name="overview" id="overview" cols="30" rows="10"></textarea>
+        </div>
 
-            <?php include __DIR__ . '/form-character.php'; ?>
-            <?php include __DIR__ . '/form-character.php'; ?>
-            <?php include __DIR__ . '/form-character.php'; ?>
-            <?php include __DIR__ . '/form-character.php'; ?>
+        <div class="container">
+            <?php $character_order = '1'; ?>
+            <?php include __DIR__ . '/character-build-select.php'; ?>
+        </div>
 
+        <div class="container">
+            <?php $character_order = '2'; ?>
+            <?php include __DIR__ . '/character-build-select.php'; ?>
+        </div>
+
+        <div class="container">
+            <?php $character_order = '3'; ?>
+            <?php include __DIR__ . '/character-build-select.php'; ?>
+        </div>
+
+        <div class="container">
+            <?php $character_order = '4'; ?>
+            <?php include __DIR__ . '/character-build-select.php'; ?>
+            <br>
             <div class="flex-container">
                 <input type="submit" value="Submit" class="btn" class="add-team-submit">
             </div>
+        </div>
 
-        </form>
     </div>
 
-</div>
-
+    </div>
+</form>
 
 <?php include_once __DIR__ . '/footer.php';

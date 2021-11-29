@@ -3,10 +3,9 @@
 session_start();
 
 // Required files for the app
-require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/database.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/helper.php';
-// require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/functions.php';
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/database.php';
+require_once __DIR__ . '/helper.php';
 
 // Set Page Title
 if (isset($page_title)) {

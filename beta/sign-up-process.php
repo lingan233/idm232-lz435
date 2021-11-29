@@ -1,23 +1,25 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/database.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/helper.php';
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/database.php';
+require_once __DIR__ . '/helper.php';
+
+// require_once $_SERVER['DOCUMENT_ROOT'] . '/idm232/beta/config.php';
+// require_once $_SERVER['DOCUMENT_ROOT'] . '/idm232/beta/database.php';
+// require_once $_SERVER['DOCUMENT_ROOT'] . '/idm232/beta/helper.php';
 
 if (isset($_POST['submit'])) {
     // Parse Data
     $name = mysqli_real_escape_string($db_connection, $_POST['name']);
     $email = mysqli_real_escape_string($db_connection, $_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $current_date = getFormattedDateTime();
 
     echo '<pre>';
     var_dump($_POST);
     echo '</pre>';
 
     // Build Query
-    $query = 'INSERT INTO `users`(`id`, `name`, `email`, `phone`, `password`, `date_created`)';
-    // $query .= "VALUES ('9', '$name', '$email', '123121', '$password', '$current_date')";
-    $query .= "VALUES ('15', '$name', '$email', '1231rsdfds21', '$password', '$current_date')";
+    $query = 'INSERT INTO `my_users`(`name`, `email`, `password`)';
+    $query .= "VALUES ('$name', '$email', '$password')";
  
     echo '<pre>';
     var_dump($query);
@@ -43,5 +45,5 @@ if (isset($_POST['submit'])) {
 // $psw = $_POST['psw'];
 
 
-// INSERT INTO `users`(`id`, `name`, `email`, `phone`, `password`, `date_created`) 
+// INSERT INTO `my_users`(`id`, `name`, `email`, `phone`, `password`, `date_created`) 
 // VALUES ('5', 'abc', 'abc@gmail.com', '9175555555', 'asdfsa', '2021-11-01 10:10:10')

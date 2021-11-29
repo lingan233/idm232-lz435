@@ -12,6 +12,4 @@ if (!$db_connection) {
     exit();
 }
 
-
-
 ?> 
