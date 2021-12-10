@@ -8,6 +8,7 @@ require_once __DIR__ . '/helper.php';
 // require_once $_SERVER['DOCUMENT_ROOT'] . '/idm232/beta/helper.php';
 
 if (isset($_POST['submit'])) {
+    
     // Parse Data
     $name = mysqli_real_escape_string($db_connection, $_POST['name']);
     $email = mysqli_real_escape_string($db_connection, $_POST['email']);
