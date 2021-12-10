@@ -4,7 +4,7 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 /* ----------FONT-------------- */
 
-h1, h2, h3, h5, p {
+h1, h2, h3, h5, p, li {
     margin: 1rem;
 }
 
@@ -28,8 +28,14 @@ h4 {
     font-family: 'ZCOOL KuaiLe', cursive;
 }
 
-p, .btn {
+p, .btn, li {
     font-family: 'Roboto', sans-serif;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 1rem;
+    /* display: block; */
 }
 
 /* -----------GLOBAL------------- */
@@ -160,6 +166,24 @@ input {
     background: rgba(20, 20, 20, .7);
     padding: 2rem;
 }
+
+.view-team-link {
+    padding: 2rem;
+    margin: 3rem;
+    width: fit-content;
+    background-color: rgb(173, 60, 45);
+}
+
+.view-team-link a{
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.view-team-title {
+    padding: 2rem;
+    margin: 2rem;
+}
+
 
 /* -----------TEAM PAGE------------- */
 
